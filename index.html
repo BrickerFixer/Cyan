@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Cyan - The Index Metasearch Crawler</title>
+    <style>
+        /* --- Skeuomorphic Design & Base Styles --- */
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap');
+
+        body {
+            background-color: #d8d4cf;
+            /* A subtle linen texture created with CSS gradients */
+            background: url("pawel-czerwinski-YuJm-d7k2Jg-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* The main "paper" container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fdfdfd;
+            padding: 30px 50px;
+            border: 1px solid #c5c5c5;
+            /* The key to the 3D effect: multiple shadows for depth */
+            box-shadow: 
+                0px 8px 15px rgba(0, 0, 0, 0.2), 
+                inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Typography & Content Styling --- */
+        h1 {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 2.5em;
+            color: #2c3e50;
+            text-align: center;
+            /* Subtle text shadow to give it a "pressed" look */
+            text-shadow: 1px 1px 1px #fff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Merriweather', Georgia, serif;
+            color: #34495e;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            text-shadow: 1px 1px 1px #fff;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        /* Custom list bullets */
+        li::before {
+            content: '•';
+            color: #2980b9;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Image styling to make it look like a photo on the page */
+        .crawler-img {
+            display: block;
+            max-width: 150px;
+            height: auto;
+            margin: 20px auto 40px auto;
+            padding: 16px;
+            border: 8px solid #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        
+        <img src="index.png" alt="Index Search Engine Logo" class="crawler-img">
+
+        <h1>Cyan Crawler</h1>
+        <p class="intro-text">
+            An ethical, user-focused crawler for the <strong>Index Metasearch</strong> project.
+        </p>
+
+        <section>
+            <p>Hello! If you've found this page, you've likely seen "Cyan" in your server logs. Cyan is the web crawler for my open-source search project, <strong>Index</strong>. Our mission is to build a search experience that is ethical, transparent, and respects users by providing direct access to quality information—without a barrage of ads.</p>
+            <p>Cyan's purpose is to index the text content of your page so that people can find your valuable website through a more privacy-respecting search tool that will, likely, not bury your website in the search results. (we value small and actually useful resources, you're amazing!)</p>
+        </section>
+
+        <section>
+            <h2>If you were spammed by the crawler:</h2>
+            <p>That is truly unfortunate, and I sincerely apologize. As a new project, I am constantly refining the crawling behavior to be as polite as possible. If Cyan was overly aggressive, it was unintentional.</p>
+            <ul>
+                <li>Please feel free to contact me via <a href="mailto:brickerfixer@gmail.com">email</a>.</li>
+                <li>Or, if you have a GitHub account, you can <a href="https://github.com/BrickerFixer/Search-node-example/issues" target="_blank" rel="noopener noreferrer">report an issue</a>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>If you wish to opt-out:</h2>
+            <p>I'd be sad to see you go, but I completely respect your choice. The best way to block Cyan (and other well-behaved bots) is by using a `robots.txt` file. However, if you'd prefer a manual removal, please contact me through the same channels, and I will gladly add your site to my exclusion list.</p>
+        </section>
+
+        <section>
+            <h2>Interested in learning more?</h2>
+            <ul>
+                <li>See the project's old structure on GitHub: <a href="https://github.com/BrickerFixer/Index" target="_blank" rel="noopener noreferrer">BrickerFixer/Index</a>.</li>
+                <li>Explore the new, node-based structure: <a href="https://github.com/BrickerFixer/Search-node-example" target="_blank" rel="noopener noreferrer">BrickerFixer/Search-node-example</a>.</li>
+                <li>Check out my personal blog at <a href="https://brickerfixer.github.io/" target="_blank" rel="noopener noreferrer">brickerfixer.github.io</a>.</li>
+            </ul>
+            <p>A future, more advanced crawler named "Blu" is planned for larger-scale indexing. It will be built with the same principles of politeness and respect for webmasters.</p>
+        </section>
+
+        <footer>
+            <p>Thank you for your understanding. I am committed to resolving any issues collaboratively and respectfully.</p>
+            Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/blue-and-white-water-surface-YuJm-d7k2Jg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
